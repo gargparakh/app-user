@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -38,7 +39,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,EditComplaint.class);
-                int position = complaintObjectHolder.getPosition();
+                int position = complaintObjectHolder.getAdapterPosition();
                 ComplaintObject co = items.get(position);
                 Bundle b = new Bundle();
                 b.putString("id",co.getId());
@@ -57,6 +58,15 @@ public class CardViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 b.putBoolean("verified",verified);
                // b.putBoolean("phone_no_verified",phone_no_verified);
                 intent.putExtras(b);
+                context.startActivity(intent);
+            }
+        });
+
+        Button button = (Button) view.findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ChatActivity.class);
                 context.startActivity(intent);
             }
         });
