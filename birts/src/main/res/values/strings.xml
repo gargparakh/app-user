@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BIRTS Grievance</string>
+    <string name="no_geocoder_available">No Geocode Available! :(</string>
+    <string name="service_not_available">Service Not Available! :(</string>
+    <string name="invalid_lat_long_used">Invalid Latitude or Longitude! :(</string>
+    <string name="no_address_found">No Address Found</string>
+    <string name="address_found">Address Found! :)</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="typeMessage">Type to compose</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="accept">Accept</string>
+
+</resources>

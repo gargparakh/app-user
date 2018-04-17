@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/home/rails/.android/build-cache/eea7e78a82fa065d34dbf4b0b6ade1bcb2dd0cbc/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/home/rails/.android/build-cache/eea7e78a82fa065d34dbf4b0b6ade1bcb2dd0cbc/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/track.xml",
+        "source": "/home/rails/Parakh/user_grievance-master/birts/src/main/res/anim/track.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/complain.xml",
+        "source": "/home/rails/Parakh/user_grievance-master/birts/src/main/res/anim/complain.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/home/rails/.android/build-cache/eea7e78a82fa065d34dbf4b0b6ade1bcb2dd0cbc/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/home/rails/.android/build-cache/eea7e78a82fa065d34dbf4b0b6ade1bcb2dd0cbc/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/updatepass.xml",
+        "source": "/home/rails/Parakh/user_grievance-master/birts/src/main/res/anim/updatepass.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/home/rails/.android/build-cache/eea7e78a82fa065d34dbf4b0b6ade1bcb2dd0cbc/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/home/rails/.android/build-cache/eea7e78a82fa065d34dbf4b0b6ade1bcb2dd0cbc/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    }
+]

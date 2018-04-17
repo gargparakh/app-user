@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/drawable-v21/abc_edit_text_material.xml"
+    }
+]

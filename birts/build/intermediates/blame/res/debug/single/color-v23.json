@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/home/rails/.android/build-cache/eea7e78a82fa065d34dbf4b0b6ade1bcb2dd0cbc/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/rails/Parakh/user_grievance-master/birts/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/rails/.android/build-cache/613ddab0ab77259d71b6c51a5f3ed083c7699b15/output/res/color-v23/abc_tint_default.xml"
+    }
+]
