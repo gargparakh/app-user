@@ -97,6 +97,8 @@ public class MainActivity extends AppCompatActivity{
                         accessToken = null;
                         accessToken = jObj.getString("access_token");
                         secretKey = jObj.getString("secret_key");
+                        Constants.ACCESS_TOKEN = accessToken;
+                        Constants.SECRET_KEY = secretKey;
                         String user = jObj.getString("user_name");
                         String enroll_no = jObj.getString("enroll_no");
                         //boolean verified = jObj.getBoolean("verified");

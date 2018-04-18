@@ -11,7 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.text.DateFormat;
 import java.util.List;
 
 public class ChatAdapter extends BaseAdapter {
@@ -65,7 +64,7 @@ public class ChatAdapter extends BaseAdapter {
         //to simulate whether it me or other sender
         setAlignment(holder, myMsg);
         holder.txtMessage.setText(chatMessage.getChats());
-        holder.txtInfo.setText(DateFormat.getDateTimeInstance().format(chatMessage.getCreatedAt()));
+        holder.txtInfo.setText(chatMessage.getCreatedAt());
 
         return convertView;
     }

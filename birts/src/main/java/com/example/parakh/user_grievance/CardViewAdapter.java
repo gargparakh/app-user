@@ -41,6 +41,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 Intent intent = new Intent(context,EditComplaint.class);
                 int position = complaintObjectHolder.getAdapterPosition();
                 ComplaintObject co = items.get(position);
+                Constants.CURRENT_COMPLAINT_OBJECT = co;
                 Bundle b = new Bundle();
                 b.putString("id",co.getId());
                 b.putString("subject",co.getSubject());
@@ -62,14 +63,14 @@ public class CardViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             }
         });
 
-        Button button = (Button) view.findViewById(R.id.button3);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, ChatActivity.class);
-                context.startActivity(intent);
-            }
-        });
+//        Button button = (Button) view.findViewById(R.id.chat_button);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(context, ChatActivity.class);
+//                context.startActivity(intent);
+//            }
+//        });
         return complaintObjectHolder;
     }
 

@@ -51,18 +51,7 @@
         android:layout_marginRight="20dp"
         android:id="@+id/textView14" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView14"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
 
-        android:text="Chat"
-
-                 />
 
 
 </RelativeLayout>

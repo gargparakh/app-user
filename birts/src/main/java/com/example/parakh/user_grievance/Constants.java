@@ -5,6 +5,9 @@ package com.example.parakh.user_grievance;
  */
 
 public final class Constants {
+    public static String ACCESS_TOKEN;
+    public static String SECRET_KEY;
+    public static ComplaintObject CURRENT_COMPLAINT_OBJECT;
     public static final int SUCCESS_RESULT = 0;
     public static final int FAILURE_RESULT = 1;
     public static final String PACKAGE_NAME =

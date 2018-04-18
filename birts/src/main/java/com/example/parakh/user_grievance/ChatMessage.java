@@ -11,7 +11,7 @@ public class ChatMessage {
     private Integer id;
     private String role;
     private String chats;
-    private Date createdAt;
+    private String createdAt;
     private Date updatedAt;
     private Integer complaintsId;
 
@@ -39,11 +39,11 @@ public class ChatMessage {
         this.chats = chats;
     }
 
-    public Date getCreatedAt() {
+    public String getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(Date createdAt) {
+    public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
     }
 
