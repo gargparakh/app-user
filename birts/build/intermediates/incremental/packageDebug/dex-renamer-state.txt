@@ -1,7 +1,0 @@
-#Tue Apr 17 18:09:07 IST 2018
-base.0=/home/rails/Parakh/user_grievance-master/birts/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2428ace2e59fd181b894c28bba7045fab25a9e26
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/home/rails/Parakh/user_grievance-master/birts/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0bd530e1821179eebc7c5a40af225858fc9af690/classes.dex
-base.1=/home/rails/Parakh/user_grievance-master/birts/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0bd530e1821179eebc7c5a40af225858fc9af690
-file.0=/home/rails/Parakh/user_grievance-master/birts/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2428ace2e59fd181b894c28bba7045fab25a9e26/classes.dex
