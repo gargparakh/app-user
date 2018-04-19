@@ -30,6 +30,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -76,7 +78,7 @@ public class ChatActivity extends AppCompatActivity {
 
                 ChatMessage chatMessage = new ChatMessage();
                 chatMessage.setChats(messageText);
-                chatMessage.setCreatedAt(DateFormat.getDateTimeInstance().format(new Date()));
+                chatMessage.setCreatedAt(new Date());
                 chatMessage.setRole("user");
 
                 messageET.setText("");
@@ -134,16 +136,14 @@ public class ChatActivity extends AppCompatActivity {
                             chatMessage.setRole(jsonObject.getString("role"));
                             chatMessage.setComplaintsId(jsonObject.getInt("complaint_id"));
                             String createdAt = jsonObject.getString("created_at");
-//                            createdAt.replace("T", " ");
-//                            createdAt.replace("+05:30", "");
-//                            System.out.println("?????????? "+createdAt);
-//                            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-//                            try {
-                                chatMessage.setCreatedAt(createdAt);
-//                                chatMessage.setCreatedAt(new Date());
-//                            } catch (ParseException e) {
-//                                e.printStackTrace();
-//                            }
+                            String createdAt1 = createdAt.replace("T", " ");
+                            String createdAt2 = createdAt1.replace("+05:30", "");
+                            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+                            try {
+                                chatMessage.setCreatedAt(formatter.parse(createdAt2));
+                            } catch (ParseException e) {
+                                e.printStackTrace();
+                            }
                             chatHistory.add(chatMessage);
                         }
                         adapter = new ChatAdapter(ChatActivity.this, new ArrayList<ChatMessage>());
@@ -229,7 +229,7 @@ public class ChatActivity extends AppCompatActivity {
                 params.put("complaint_id", Constants.CURRENT_COMPLAINT_OBJECT.getId());
                 params.put("chats", chatMessage.getChats());
                 params.put("role", chatMessage.getRole());
-                params.put("created_at", chatMessage.getCreatedAt());
+                params.put("created_at", DateFormat.getDateTimeInstance().format(chatMessage.getCreatedAt()));
                 return params;
             }
             @Override
@@ -268,21 +268,18 @@ public class ChatActivity extends AppCompatActivity {
                             chatMessage.setRole(jsonObject.getString("role"));
                             chatMessage.setComplaintsId(jsonObject.getInt("complaint_id"));
                             String createdAt = jsonObject.getString("created_at");
-//                            createdAt.replace("T", " ");
-//                            createdAt.replace("+05:30", "");
-//                            System.out.println("?????????? "+createdAt);
-//                            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-//                            try {
-                            chatMessage.setCreatedAt(createdAt);
-//                                chatMessage.setCreatedAt(new Date());
-//                            } catch (ParseException e) {
-//                                e.printStackTrace();
-//                            }
+                            String createdAt1 = createdAt.replace("T", " ");
+                            String createdAt2 = createdAt1.replace("+05:30", "");
+                            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+                            try {
+                                chatMessage.setCreatedAt(formatter.parse(createdAt2));
+                            } catch (ParseException e) {
+                                e.printStackTrace();
+                            }
                             chatHistoryNew.add(chatMessage);
                         }
 
                         if(chatHistory.size() != chatHistoryNew.size()) {
-                            System.out.println("??????@@@@@@@@@@@@@@@@@@@");
                             chatHistory = chatHistoryNew;
                             for(int i=0; i<chatHistory.size(); i++) {
                                 ChatMessage message = chatHistory.get(i);
