@@ -39,7 +39,7 @@ public class EditComplaint extends AppCompatActivity {
     String URL_FOR_COMPLAINT_BY_ID = Constants.SERVER+"/complaint/show_complaint_by_id";
     String URL_FOR_ALERT = Constants.SERVER+"/complaint/create_alert";
     ProgressDialog progressDialog;
-    ImageView tv_image;
+//    ImageView tv_image;
     Button save_button,alert;
     Context context;
   //  String id,subject,description,latitude,longitude,city,state,pincode,created_at,updated_at,userid,status,priority,image;
@@ -56,6 +56,8 @@ public class EditComplaint extends AppCompatActivity {
         name = b.getString("name");
         email = b.getString("email");
         context = getApplicationContext();
+
+
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
 //        tv_id = (TextView)findViewById(R.id.textView15);
@@ -72,7 +74,7 @@ public class EditComplaint extends AppCompatActivity {
         tv_userid = (TextView)findViewById(R.id.textView25);
         tv_status = (TextView)findViewById(R.id.textView26);
       //  tv_priority = (TextView)findViewById(R.id.textView27);
-        tv_image = (ImageView)findViewById(R.id.imageView4);
+//        tv_image = (ImageView)findViewById(R.id.imageView4);
   //      tv_id.setText("Complaint ID : "+b.getString("id"));
         tv_subject.setText("Subject : "+b.getString("subject"));
         tv_description.setText("Description : "+b.getString("description"));
@@ -102,16 +104,6 @@ public class EditComplaint extends AppCompatActivity {
       //  tv_priority.setShadowLayer(30, 0, 0, Color.DKGRAY);
 //        tv_address.setShadowLayer(30, 0, 0, Color.DKGRAY);
 
-        /*Paint paint = new Paint();
-        paint.setAntiAlias(true);
-
-
-
-
-        tv_image.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-        paint.setShadowLayer(30, 0, 30, Color.argb(255, 255, 0, 0));
-        tv_image.setLayerPaint(paint);*/
-
         save_button = (Button)findViewById(R.id.save_button);
         save_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,68 +127,6 @@ public class EditComplaint extends AppCompatActivity {
                 context.startActivity(intent);
             }
         });
-        /*alert = (Button)findViewById(R.id.alert);
-        alert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            Toast.makeText(getApplicationContext(),"An alert will be sent when the allotted time has passed",Toast.LENGTH_LONG);
-            }
-        });*/
-        String key = b.getString("image");
-        AWSCredentials credentials = new BasicAWSCredentials(
-                Constants.BUCKET_ACCESS_KEY_ID,
-                Constants.BUCKET_SECRET_KEY_ID);
-
-        // create a client connection based on credentials
-        AmazonS3 s3client = new AmazonS3Client(credentials);
-       // s3client.setEndpoint("asarcgrs.s3.ap-south-1.amazonaws.com");
-        // create bucket - name must be unique for all S3 users
-        ResponseHeaderOverrides override = new ResponseHeaderOverrides();
-        override.setContentType( "image/jpeg" );
-        GeneratePresignedUrlRequest urlRequest = new GeneratePresignedUrlRequest( Constants.BUCKET_NAME, key );
-        urlRequest.setExpiration( new Date( System.currentTimeMillis() + 3600000 ) );  // Added an hour's worth of milliseconds to the current time.
-        urlRequest.setResponseHeaders( override );
-        URL url = s3client.generatePresignedUrl( urlRequest );
-        try {
-           // startActivity( new Intent( Intent.ACTION_VIEW, Uri.parse( url.toURI().toString() ) ) );
-           /* Uri uri = Uri.parse( url.toURI().toString() );
-            Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(uri));
-            tv_image.setImageBitmap(bitmap);*/
-            String Url = url.toURI().toString();
-            Picasso.with(getApplicationContext())
-                    .load(Url).resize(400,300)
-                    .into(tv_image);
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-    /*    AmazonS3 s3 = new AmazonS3Client(new BasicAWSCredentials(Constants.BUCKET_ACCESS_KEY_ID,
-                Constants.BUCKET_SECRET_KEY_ID));
-        TransferUtility transferUtility = new TransferUtility(s3, this);
-        File filesDir = getApplicationContext().getFilesDir();
-        File imageFile = new File(filesDir,key);
-        TransferObserver observer = transferUtility.download(
-                Constants.BUCKET_NAME,
-                key,
-                imageFile
-        );
-
-        Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
-     //   Drawable d = new BitmapDrawable(getResources(), bitmap);
-     //  resize(d);
-     //   tv_image.setImageDrawable(d);
-        tv_image.setImageBitmap(bitmap);*/
     }
-    private BitmapDrawable resize(Drawable image)
-    {
-        //(int) (bitmap.getHeight() * 0.125)
-        Bitmap bitmap = ((BitmapDrawable) image).getBitmap();
-        Bitmap bitmapResized = Bitmap.createScaledBitmap(bitmap,
-                50, 50, false);
-        return new BitmapDrawable(getResources(), bitmapResized);
-    }
-
-
-
 }
 
